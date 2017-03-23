@@ -103,7 +103,7 @@ $ sudo service salt-minion restart
 ```
 
 2.  Upon service restart the Minion has connected to the Master, now we need to
-accept is key to establish communication between them.  List all keys using the 
+accept its key to establish communication between them.  List all keys using the 
 following command.
 
 ```sh
