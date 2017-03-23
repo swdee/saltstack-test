@@ -163,8 +163,8 @@ Basic setup of Master and Minion is now complete.
 1. Using the salt state configuration files checked out by git above, apply them
 
 ```sh
-salt ubuntu.members.linode.com state.apply logger
-salt ubuntu.members.linode.com state.apply addusers
+$ sudo salt ubuntu.members.linode.com state.apply logger
+$ sudo salt ubuntu.members.linode.com state.apply addusers
 ```
 
 
