@@ -106,22 +106,22 @@ $ sudo service salt-minion restart
 accept is key to establish communication between them.  List all keys using the 
 following command.
 
-{{{
+```sh
 $ sudo salt-key --list all
-}}}
+```
 
 
 This will output the list of keys including our new Minion which is identified
 under the "Unaccepted Keys" section by its hostname, in this case
 "ubuntu.members.linode.com".
 
-{{{
+```
 Accepted Keys:
 Denied Keys:
 Unaccepted Keys:
 ubuntu.members.linode.com
 Rejected Keys:
-}}}
+```
 
 
 NOTE: In this example as Master and Minion are running on the same host doing
@@ -133,25 +133,25 @@ authorised Minions are added to the Master.
 3. Accept Minion key using the following command and by passing its hostname 
 as parameter (in this case "ubuntu.members.linode.com").
 
-{{{
+```sh
 $ sudo salt-key -a ubuntu.members.linode.com
-}}}
+```
 
 
 4. Do a simple test to verify communications between Master and Minion.
 
-{{{
+```sh
 $ sudo salt '*' test.ping
-}}}
+```
 
 
 This will output the hostname and value of "True" to indicate the check 
 was successful.
 
-{{{
+```
 ubuntu.members.linode.com:
     True
-}}}
+```
 
 
 Basic setup of Master and Minion is now complete.
